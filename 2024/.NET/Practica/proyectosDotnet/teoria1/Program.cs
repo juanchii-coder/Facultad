@@ -39,7 +39,7 @@ String st = "c:\\windows\\system";
  Console.WriteLine(st);
  */
 
- //punto 4
+//punto 4
 /*
 Console.WriteLine("ingresar tu nombre: ");
 String nombre="mundo";
@@ -208,7 +208,7 @@ int i = 0;
 */
 
 //punto 16
-
+/*
 int i = 1;
  if (--i == 0)
  {
@@ -221,3 +221,100 @@ int i = 1;
  Console.WriteLine(--i);
  Console.WriteLine(i++);
  Console.WriteLine(i);
+ */
+
+// PRACTICA 2
+
+//punto 10
+/*
+using System.Text;
+object[] v = new object[10];
+v[0] = new StringBuilder("Net");// v[0]="Net"
+for (int i = 1; i < 10; i++)
+{
+  v[i] = v[i - 1];//v[0] a v[9]="Net"
+}
+(v[5] as StringBuilder).Insert(0, "Framework .");//v[5] a v[9]="framework .Net", v[0] a v[4]="Net"
+foreach (StringBuilder s in v)
+  Console.WriteLine(s);
+//dibujar el estado de la pila y la mem. heap
+*/
+/*
+de v[5] a v[9]=referencian a 2
+de v[0] a v[4]=referencian a 1
+mem. heap=  Net(1), Framework .Net(2)
+*/
+/*
+//en este punto de la ejecución
+v[5] = new StringBuilder("CSharp");
+foreach (StringBuilder s in v)
+  Console.WriteLine(s);
+//dibujar el estado de la pila y la mem. heap
+*/
+/*
+v[5]=referencia a 3, y de v[6] a v[9]=referencian a 2
+v[0] a v[4]=referencian a 1
+mem. heap=  Net(1), Framework .Net(2), CSharp(3)
+*/
+//en este punto de la ejecución
+
+//punto 11
+/*
+el metodo split se utiliza para dividir un string en varias partes
+*/
+/*
+string st = "hola como estas";//o por consola
+Console.WriteLine(st);
+String[] palabras = st.Split(" ");
+foreach (var palabra in palabras)
+{
+  Console.WriteLine(palabra);
+}
+*/
+
+//punto 12
+/*
+Console.WriteLine("escribir un mes en conosla: ");
+String st = Console.ReadLine();
+bool ok = false;
+for (Meses m = Meses.Diciembre; m >= Meses.Enero; m--)
+{
+
+  Console.WriteLine(m.ToString());
+
+  if (m.ToString().Equals(st))
+  {
+    ok = true;
+  }
+}
+if (ok)
+{
+  Console.WriteLine(st + " es un mes");
+}
+else
+{
+  Console.WriteLine(st + " no es un mes");
+}
+
+enum Meses
+{
+  Enero, Febrero, Marzo, Abril, Mayo, Junio, julio,
+  Agosto, Septiempre, Octubre, Noviembre, Diciembre
+}
+*/
+
+//punto 13
+/*
+Console.WriteLine(args == null);//false
+Console.WriteLine(args.Length);//0
+*/
+
+//punto 14
+/*
+int[]? vector = new int[0];// se crea un vector de cero lugares pero no significa que sea nulo
+*/
+
+//punto 15
+//Console.WriteLine("¡Hola {0}!", args[0]);
+//si se inicia el programa desde la terminal y se le manda algun parametro no pasa nada
+//si se inicia el programa y nos e manda nada, se realiza una exepcion
