@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.net\\practica\\proyectosDotnet\\teoria1\\teoria1.csproj": {}
+    "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.NET\\Practica\\proyectosDotnet\\teoria1\\teoria1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.net\\practica\\proyectosDotnet\\teoria1\\teoria1.csproj": {
+    "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.NET\\Practica\\proyectosDotnet\\teoria1\\teoria1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.net\\practica\\proyectosDotnet\\teoria1\\teoria1.csproj",
+        "projectUniqueName": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.NET\\Practica\\proyectosDotnet\\teoria1\\teoria1.csproj",
         "projectName": "teoria1",
-        "projectPath": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.net\\practica\\proyectosDotnet\\teoria1\\teoria1.csproj",
+        "projectPath": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.NET\\Practica\\proyectosDotnet\\teoria1\\teoria1.csproj",
         "packagesPath": "C:\\Users\\Juanchi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.net\\practica\\proyectosDotnet\\teoria1\\obj\\",
+        "outputPath": "C:\\Users\\Juanchi\\Desktop\\Facultad\\2024\\.NET\\Practica\\proyectosDotnet\\teoria1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juanchi\\AppData\\Roaming\\NuGet\\NuGet.Config"

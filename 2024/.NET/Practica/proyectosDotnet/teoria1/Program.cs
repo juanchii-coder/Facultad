@@ -318,3 +318,146 @@ int[]? vector = new int[0];// se crea un vector de cero lugares pero no signific
 //Console.WriteLine("¡Hola {0}!", args[0]);
 //si se inicia el programa desde la terminal y se le manda algun parametro no pasa nada
 //si se inicia el programa y nos e manda nada, se realiza una exepcion
+
+//punto 16
+/*
+foreach (var nombres in args)
+{
+  Console.WriteLine("hola " + nombres);
+}
+
+for (var i = 0; i < args.Length; i++)
+{
+  Console.WriteLine("hola " + args[i]);
+}
+*/
+
+//punto 17
+/*
+if (esPrimo(int.Parse(args[0])))
+{
+  Console.WriteLine("es primo");
+}
+else
+{
+  Console.WriteLine("no es primo");
+}
+
+bool esPrimo(int i)
+{
+  bool ok = true;
+  for (int j = 2; j <= Math.Sqrt(i); j++)
+  {
+    if (i % j == 0)
+    {
+      ok = false;
+    }
+  }
+  return ok;
+}
+*/
+
+//punto 18
+/*
+Console.WriteLine(Fac(int.Parse(args[0])));
+Console.WriteLine(FacR(int.Parse(args[0])));
+Console.WriteLine(FacE_B(int.Parse(args[0])));
+
+int FacE_B(int n) => n == 0 ? 1 : n * FacE_B(n - 1);
+//expression-bodied method es cuando el metodo es de una linea sola, se utiliza "=>", la flecha
+//si n==0 es V, devuelve lo que esta a la izquierda del ":", osea 1
+//si es F, devuelve lo de la derecha
+
+int FacR(int v)
+{
+  if (v > 1)
+  {
+    v *= FacR(v - 1);
+  }
+  else
+  {
+    v = 1;
+  }
+  return v;
+}
+
+int Fac(int n)
+{
+  int i;
+  for (i = (n - 1); i > 1; i--)
+  {
+    n *= i;
+  }
+  return n;
+}
+*/
+
+//punto19
+/*
+int resul1;
+int resul2;
+FacR(int.Parse(args[0]), out resul1);
+Fac(int.Parse(args[0]), out resul2);
+Console.WriteLine(resul1 + " y " + resul2);
+
+
+void Fac(int n, out int resul)
+{
+  resul = n;
+  for (int i = (n - 1); i > 1; i--)
+  {
+    resul *= i;
+  }
+}
+
+
+void FacR(int v, out int resul)
+{
+  if (v == 0)
+  {
+    resul = 1;
+  }
+  else
+  {
+    int temp;
+    FacR(v - 1, out temp);
+    resul = v * temp;
+  }
+}
+*/
+
+//punto 20
+/*
+object a = 'A';
+object b = 1;
+Console.WriteLine(b);
+Console.WriteLine(a);
+Swap(ref a, ref b);
+Console.WriteLine(b);
+Console.WriteLine(a);
+
+static void Swap(ref object a, ref object b)
+{
+  object c = a;
+  a = b;
+  b = c;
+}
+//por defecto los parametros de pasan por valor en c#
+//entonces hay que indicarlo
+*/
+
+//punto 21
+/*
+Imprimir(1, "perro", 'a', 2.4, DateTime.UtcNow);
+Imprimir(1, "perro", 'a');
+Imprimir();
+Imprimir("------------------");
+void Imprimir(params object[] algo)
+{
+  foreach (object a in algo)
+  {
+    Console.Write(a + " ");
+  }
+  Console.WriteLine();
+}
+*/
