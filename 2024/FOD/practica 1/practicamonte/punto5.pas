@@ -72,25 +72,23 @@ begin
     close(arch);
 end;
 
-var
-    arch:archivo;
-    cel:celulares;
+procedure cargar(var arch:archivo);
+var cel:celulares;
 begin
-    assign(arch,'celulares.txt')
-    Writeln('elige algunas de las siguientes opciones: ');
-    Writeln('1= crear archivo desordenado');
-    Writeln('2= listar datos');
-    Writeln('3= listar celulares con descripcion');
-    Writeln('4= exportar archivo');
+    rewrite(arch);
+    leer(cel);
+    While (cel.cod<>0)do begin
+        Write(arch,cel);
+        leer(cel);
+    end;
+    close(arch);
+end;
+
+procedure main(var arch:archivo;num:integer);
+begin
     if(num=1)then 
     begin
-        rewrite(arch);
-        leer(cel);
-        While (cel.cod<>0)do begin
-            Write(arch,cel);
-            leer(cel);
-        end;
-        close(arch);
+        cargar(arch);
     end
     else if (num=2) then 
     begin
@@ -110,4 +108,18 @@ begin
     begin
         writeln(num,' No es una opcion');
     end;
+end;
+
+var
+    arch:archivo;
+    num:integer;
+begin
+    assign(arch,'celulares.txt')
+    Writeln('elige algunas de las siguientes opciones: ');
+    Writeln('1= crear archivo desordenado');
+    Writeln('2= listar datos');
+    Writeln('3= listar celulares con descripcion');
+    Writeln('4= exportar archivo');
+    readln(num);
+    main(arch,num);
 end.
