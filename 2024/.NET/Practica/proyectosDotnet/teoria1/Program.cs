@@ -225,6 +225,89 @@ int i = 1;
 
 // PRACTICA 2
 
+//punto 1
+
+/*o1 apunta "A", o2 tambien apunta a "A", son 2 objetos por referencia que apuntan al mismo lugar, al cambiar o2,
+no cambia lo que pnta o1, sino que guarda "Z", en otro lugar en memoria, porque no se sobreeescribe*/
+
+//punto 2
+/*
+char c1 = 'A';
+string st1 = "A";
+object o1 = c1;//boxing, variable por valor a una variable por referencia
+object o2 = st1;//boxing variable por valor a una variable por referencia
+char c2 = (char)o1;//unboxing, conversion de tipos de variables
+string st2 = (string)o2;//unboxing, conversion de tipos de variables
+*/
+
+//punto 3
+/*
+la conversion implicita es entre variables del mismo tipo, que se sabe que son seguras, y no tiran
+ningun tipo de error
+int a=1;
+int b=a;
+
+las conversiones explicitas, son las que tienen mayor riesgo a tirar un erros de conversion, por ej: 
+string st="hola";
+int i= (int)st; //aca hay un erros porque el string "hola", no se puede convertir en numero
+en cambio si el string fuera "123", ahi si se puede
+*/
+
+//punto 4
+/*
+//con errores:
+object o = "Hola Mundo!";
+string st = o;
+int i = 12;
+byte b = i;
+double d = i;
+float f = d;
+o = i;
+i = o + 1;
+
+//sin errores:
+object o = "Hola Mundo!";
+string st = (string)o;
+int i = 12;
+byte b = (byte)i;
+double d = i;
+float f = (float)d;
+o = i;
+i = (int)o + 1;
+*/
+
+//punt0 6
+/* no compila porque no tiene el using System, deberia ser System.console.writeln(i)*/
+
+//punto 7
+/*
+char c1 = 'A';
+char c2 = 'A';
+Console.WriteLine(c1 == c2);// tira true, porque los dos chars son iguales
+object o1 = c1;
+object o2 = c2;
+Console.WriteLine(o1 == o2);// tira false porque aunque contengan el mismo char ('A'), no apuntan a la misma direcciond e memoria
+*/
+
+// punto 8
+/*
+la mayor diferencia del string al stringbuilder, es que el string una vez creado, no se puede modificar, 
+Cada vez que se realiza una operación en un string, se crea un nuevo objeto en memoria.
+en cambio el stringbuilder si se puede modificar, Puede modificar su contenido sin crear nuevos objetos
+stringbuilder brilla mas cuando se requieren hacer cambios constantes a la cadena de caracteres
+
+string se utiliza cuando las cadenas son constantes, y stringbuilder cuando se requieren cambiar
+*/
+
+//punto 9
+/*
+DateTime start= new DateTime();
+DateTime fin= new DateTime();
+start=DateTime.Now;
+//programa
+fin=DateTime.Now;
+Console.WriteLine(fin-start);
+*/
 //punto 10
 /*
 using System.Text;
