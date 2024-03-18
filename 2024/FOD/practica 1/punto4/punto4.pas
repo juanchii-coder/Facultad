@@ -1,4 +1,4 @@
-program punto1;
+program punto4;
 type
     archivo= file of integer;
 var
