@@ -39,7 +39,7 @@ String st = "c:\\windows\\system";
  Console.WriteLine(st);
  */
 
- //punto 4
+//punto 4
 /*
 Console.WriteLine("ingresar tu nombre: ");
 String nombre="mundo";
@@ -208,7 +208,7 @@ int i = 0;
 */
 
 //punto 16
-
+/*
 int i = 1;
  if (--i == 0)
  {
@@ -221,3 +221,243 @@ int i = 1;
  Console.WriteLine(--i);
  Console.WriteLine(i++);
  Console.WriteLine(i);
+ */
+
+// PRACTICA 2
+
+//punto 10
+/*
+using System.Text;
+object[] v = new object[10];
+v[0] = new StringBuilder("Net");// v[0]="Net"
+for (int i = 1; i < 10; i++)
+{
+  v[i] = v[i - 1];//v[0] a v[9]="Net"
+}
+(v[5] as StringBuilder).Insert(0, "Framework .");//v[5] a v[9]="framework .Net", v[0] a v[4]="Net"
+foreach (StringBuilder s in v)
+  Console.WriteLine(s);
+//dibujar el estado de la pila y la mem. heap
+*/
+/*
+de v[5] a v[9]=referencian a 2
+de v[0] a v[4]=referencian a 1
+mem. heap=  Net(1), Framework .Net(2)
+*/
+/*
+//en este punto de la ejecución
+v[5] = new StringBuilder("CSharp");
+foreach (StringBuilder s in v)
+  Console.WriteLine(s);
+//dibujar el estado de la pila y la mem. heap
+*/
+/*
+v[5]=referencia a 3, y de v[6] a v[9]=referencian a 2
+v[0] a v[4]=referencian a 1
+mem. heap=  Net(1), Framework .Net(2), CSharp(3)
+*/
+//en este punto de la ejecución
+
+//punto 11
+/*
+el metodo split se utiliza para dividir un string en varias partes
+*/
+/*
+string st = "hola como estas";//o por consola
+Console.WriteLine(st);
+String[] palabras = st.Split(" ");
+foreach (var palabra in palabras)
+{
+  Console.WriteLine(palabra);
+}
+*/
+
+//punto 12
+/*
+Console.WriteLine("escribir un mes en conosla: ");
+String st = Console.ReadLine();
+bool ok = false;
+for (Meses m = Meses.Diciembre; m >= Meses.Enero; m--)
+{
+
+  Console.WriteLine(m.ToString());
+
+  if (m.ToString().Equals(st))
+  {
+    ok = true;
+  }
+}
+if (ok)
+{
+  Console.WriteLine(st + " es un mes");
+}
+else
+{
+  Console.WriteLine(st + " no es un mes");
+}
+
+enum Meses
+{
+  Enero, Febrero, Marzo, Abril, Mayo, Junio, julio,
+  Agosto, Septiempre, Octubre, Noviembre, Diciembre
+}
+*/
+
+//punto 13
+/*
+Console.WriteLine(args == null);//false
+Console.WriteLine(args.Length);//0
+*/
+
+//punto 14
+/*
+int[]? vector = new int[0];// se crea un vector de cero lugares pero no significa que sea nulo
+*/
+
+//punto 15
+//Console.WriteLine("¡Hola {0}!", args[0]);
+//si se inicia el programa desde la terminal y se le manda algun parametro no pasa nada
+//si se inicia el programa y nos e manda nada, se realiza una exepcion
+
+//punto 16
+/*
+foreach (var nombres in args)
+{
+  Console.WriteLine("hola " + nombres);
+}
+
+for (var i = 0; i < args.Length; i++)
+{
+  Console.WriteLine("hola " + args[i]);
+}
+*/
+
+//punto 17
+/*
+if (esPrimo(int.Parse(args[0])))
+{
+  Console.WriteLine("es primo");
+}
+else
+{
+  Console.WriteLine("no es primo");
+}
+
+bool esPrimo(int i)
+{
+  bool ok = true;
+  for (int j = 2; j <= Math.Sqrt(i); j++)
+  {
+    if (i % j == 0)
+    {
+      ok = false;
+    }
+  }
+  return ok;
+}
+*/
+
+//punto 18
+/*
+Console.WriteLine(Fac(int.Parse(args[0])));
+Console.WriteLine(FacR(int.Parse(args[0])));
+Console.WriteLine(FacE_B(int.Parse(args[0])));
+
+int FacE_B(int n) => n == 0 ? 1 : n * FacE_B(n - 1);
+//expression-bodied method es cuando el metodo es de una linea sola, se utiliza "=>", la flecha
+//si n==0 es V, devuelve lo que esta a la izquierda del ":", osea 1
+//si es F, devuelve lo de la derecha
+
+int FacR(int v)
+{
+  if (v > 1)
+  {
+    v *= FacR(v - 1);
+  }
+  else
+  {
+    v = 1;
+  }
+  return v;
+}
+
+int Fac(int n)
+{
+  int i;
+  for (i = (n - 1); i > 1; i--)
+  {
+    n *= i;
+  }
+  return n;
+}
+*/
+
+//punto19
+/*
+int resul1;
+int resul2;
+FacR(int.Parse(args[0]), out resul1);
+Fac(int.Parse(args[0]), out resul2);
+Console.WriteLine(resul1 + " y " + resul2);
+
+
+void Fac(int n, out int resul)
+{
+  resul = n;
+  for (int i = (n - 1); i > 1; i--)
+  {
+    resul *= i;
+  }
+}
+
+
+void FacR(int v, out int resul)
+{
+  if (v == 0)
+  {
+    resul = 1;
+  }
+  else
+  {
+    int temp;
+    FacR(v - 1, out temp);
+    resul = v * temp;
+  }
+}
+*/
+
+//punto 20
+/*
+object a = 'A';
+object b = 1;
+Console.WriteLine(b);
+Console.WriteLine(a);
+Swap(ref a, ref b);
+Console.WriteLine(b);
+Console.WriteLine(a);
+
+static void Swap(ref object a, ref object b)
+{
+  object c = a;
+  a = b;
+  b = c;
+}
+//por defecto los parametros de pasan por valor en c#
+//entonces hay que indicarlo
+*/
+
+//punto 21
+/*
+Imprimir(1, "perro", 'a', 2.4, DateTime.UtcNow);
+Imprimir(1, "perro", 'a');
+Imprimir();
+Imprimir("------------------");
+void Imprimir(params object[] algo)
+{
+  foreach (object a in algo)
+  {
+    Console.Write(a + " ");
+  }
+  Console.WriteLine();
+}
+*/
