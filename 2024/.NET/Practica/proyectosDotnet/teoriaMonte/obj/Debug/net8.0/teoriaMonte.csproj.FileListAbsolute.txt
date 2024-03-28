@@ -1,0 +1,15 @@
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\bin\Debug\net8.0\teoriaMonte.exe
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\bin\Debug\net8.0\teoriaMonte.deps.json
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\bin\Debug\net8.0\teoriaMonte.runtimeconfig.json
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\bin\Debug\net8.0\teoriaMonte.dll
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\bin\Debug\net8.0\teoriaMonte.pdb
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.AssemblyInfoInputs.cache
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.AssemblyInfo.cs
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.csproj.CoreCompileInputs.cache
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.sourcelink.json
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.dll
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\refint\teoriaMonte.dll
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.pdb
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\teoriaMonte.genruntimeconfig.cache
+C:\Users\Juanchi\Desktop\Facultad\2024\.NET\Practica\proyectosDotnet\teoriaMonte\obj\Debug\net8.0\ref\teoriaMonte.dll
