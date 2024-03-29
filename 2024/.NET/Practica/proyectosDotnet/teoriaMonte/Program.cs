@@ -35,7 +35,7 @@ void imprimir(double[][] vv)
 */
 
 //punto 6
-
+/*
 double[,] A = new double[,]
 { { 1, 1 },
 { 2, 2 },
@@ -132,3 +132,61 @@ void imprimir(double[,] v)
     Console.WriteLine("no hay nada en el vector");
   }
 }
+*/
+
+//punto 13
+/*
+Stack<int> binario=new Stack<int>();
+Console.WriteLine("escribir un numero para pasarlo a binario");
+string? num;
+num= Console.ReadLine();
+int numero=int.Parse(num);
+while(numero>0){
+  binario.Push(numero%2);
+  numero/=2;
+}
+foreach(int nume in binario){
+  Console.Write(nume);
+}
+*/
+
+//punto 14
+/*
+String? texto = Console.ReadLine();
+Console.WriteLine($"el texto es: {texto}");
+
+int[] clave = new int[] { 5, 3, 9, 7 };
+
+Console.WriteLine(CifrarTexto(texto, clave));
+
+string CifrarTexto(String texto, int[] clave)
+{
+  Queue<int> key = new Queue<int>(clave);
+  string textoCifrado = "";
+
+  foreach (char caracter in texto)
+  {
+    int desplazar = key.Dequeue();
+    key.Enqueue(desplazar);
+    int valor;
+    if (caracter.ToString() != " ")
+    {
+      Letras letra = (Letras)Enum.Parse(typeof(Letras), caracter.ToString());
+      valor = (int)letra;
+    }
+    else
+    {
+      valor = 29;
+    }
+
+    int nuevoValor = (valor + desplazar - 1) % 29 + 1;
+
+    textoCifrado += Enum.GetName(typeof(Letras), nuevoValor);
+  }
+
+  return textoCifrado;
+}
+
+enum Letras
+{ A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z }
+*/
