@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("teoriaMonte")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+543e92241610d9cd017c910e9d38b7f903fcd4ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20d2d53ede9592594061d839cceeb8a25f08c2e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("teoriaMonte")]
 [assembly: System.Reflection.AssemblyTitleAttribute("teoriaMonte")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

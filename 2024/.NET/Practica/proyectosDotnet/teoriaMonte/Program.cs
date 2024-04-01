@@ -37,18 +37,18 @@ void imprimir(double[][] vv)
 //punto 6
 /*
 double[,] A = new double[,]
-{ { 1, 1 },
-{ 2, 2 },
-{ 3, 3 } };
+{ { 1, 2 },
+{ 3, 4 },
+{ 5, 6 } };
 
 double[,] B = new double[,]
-{ { 1, 1 },
-{ 2, 2 },
-{ 3, 3 } };
+{ { 2, 2 },
+{ 4, 4 },
+{ 6, 6 } };
 
 double[,] C = new double[,]
-{ { 1, 1, 1 },
-{ 2, 2, 2 } };
+{ { 1, 2, 3 },
+{ 4, 5, 6 } };
 
 double[,]? suma = Suma(A, B);
 double[,]? resta = Resta(A, B);
@@ -98,17 +98,38 @@ double[,]? Resta(double[,] A, double[,] B)
 }
 double[,] Multiplicacion(double[,] A, double[,] B)
 {
-  double[,] multi = new double[A.GetLength(0), A.GetLength(1)];
-  if ((A.GetLength(0) == B.GetLength(1)) & (A.GetLength(1) == B.GetLength(0)))
+  int fila1 = A.GetLength(0);
+  int columna1 = A.GetLength(1);
+  int fila2 = B.GetLength(0);
+  int columna2 = B.GetLength(1);
+
+  double[,] multi = new double[A.GetLength(0), B.GetLength(1)];
+
+  if ((fila1 != columna2))
   {
-    for (int i = 0; i < (A.GetLength(0) * A.GetLength(1)); i++)
-    {
-      multi[i / A.GetLength(1), i % A.GetLength(1)] = A[i / A.GetLength(1), i % A.GetLength(1)] * B[i % A.GetLength(1), i / A.GetLength(1)];
-    }
+    throw new ArgumentException("no se puede hacer la multiplicacion");
+
   }
   else
   {
-    throw new ArgumentException("no se puede hacer la multiplicacion");
+    //las coordenadas de los numeros de las matrices empiezan en [0,0]
+    // el for funciona mediante el indice, en este caso, i,j,x, 
+    //al finalizar el recorrido se le suma 1 al indice, y empieza d nuevo el loop,
+    //hasta que el indice no cumpla las condiciones
+
+    //  ( indice  ; condicion; +1 )
+    for (int i = 0; i < fila1; i++)//loop de 0 a cant de filas de matriz 1 -1
+    {
+      for (int j = 0; j < columna2; j++)//loop de 0 a cant de filas de matriz 2 -1
+      {
+        double sum = 0;
+        for (int x = 0; x < columna1; x++)//loop para que haga la suma
+        {
+          sum += A[i, x] * B[x, j];
+        }
+        multi[i, j] = sum;//el resultado de suma se le agrega a la matriz final
+      }
+    }
   }
   return multi;
 }
