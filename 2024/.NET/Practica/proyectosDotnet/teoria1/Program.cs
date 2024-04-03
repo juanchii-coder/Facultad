@@ -107,7 +107,7 @@ Console.ReadLine();
 */
 
 //punto 9
-
+/*
 Console.WriteLine("ingresar 2 strings separadas por un espacio");
 String? st=Console.ReadLine();
 int cantChar =st.Length/2;
@@ -130,7 +130,7 @@ if (ok&&ok2)
 }else{
   Console.WriteLine("no es igual de atras para delante");
 }
-
+*/
 
 //punto 10
 /*

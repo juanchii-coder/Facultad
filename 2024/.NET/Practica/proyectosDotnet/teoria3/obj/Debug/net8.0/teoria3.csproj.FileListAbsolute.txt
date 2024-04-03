@@ -1,0 +1,15 @@
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\bin\Debug\net8.0\teoria3.exe
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\bin\Debug\net8.0\teoria3.deps.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\bin\Debug\net8.0\teoria3.runtimeconfig.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\bin\Debug\net8.0\teoria3.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\bin\Debug\net8.0\teoria3.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.AssemblyInfoInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.AssemblyInfo.cs
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.csproj.CoreCompileInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.sourcelink.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\refint\teoria3.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\teoria3.genruntimeconfig.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.net\practica\proyectosDotnet\teoria3\obj\Debug\net8.0\ref\teoria3.dll
