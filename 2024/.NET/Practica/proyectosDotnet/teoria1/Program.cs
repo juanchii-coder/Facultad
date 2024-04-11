@@ -530,7 +530,7 @@ static void Swap(ref object a, ref object b)
 */
 
 //punto 21
-/*
+
 Imprimir(1, "perro", 'a', 2.4, DateTime.UtcNow);
 Imprimir(1, "perro", 'a');
 Imprimir();
@@ -543,4 +543,3 @@ void Imprimir(params object[] algo)
   }
   Console.WriteLine();
 }
-*/

@@ -1,0 +1,15 @@
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\bin\Debug\net8.0\teoria4.exe
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\bin\Debug\net8.0\teoria4.deps.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\bin\Debug\net8.0\teoria4.runtimeconfig.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\bin\Debug\net8.0\teoria4.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\bin\Debug\net8.0\teoria4.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.AssemblyInfoInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.AssemblyInfo.cs
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.csproj.CoreCompileInputs.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.sourcelink.json
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\refint\teoria4.dll
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.pdb
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\teoria4.genruntimeconfig.cache
+C:\Users\juanb\OneDrive\Documentos\GitHub\Facultad\2024\.NET\Practica\proyectosDotnet\teoria4\obj\Debug\net8.0\ref\teoria4.dll
