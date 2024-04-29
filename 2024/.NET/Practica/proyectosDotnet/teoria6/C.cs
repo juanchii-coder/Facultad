@@ -1,12 +1,6 @@
 ﻿namespace teoria6;
 
-public class C : B
+public class C :IImprimidor
 {
-  public C(int id) : base(id){}
-
-  public override void Imprimir() 
-  {
-    Console.Write($"C_{_id} -->");
-    base.Imprimir();
-  } 
+  public void Imprimir() => Console.WriteLine("Soy una instancia C"); 
 }

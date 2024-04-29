@@ -1,8 +1,6 @@
 ﻿namespace teoria6;
 
-public class A
+public class A:IImprimidor
 {
-  protected int _id;       
-  public A(int id) => _id = id;
-  public virtual void Imprimir() => Console.WriteLine($"A_{_id}");
+  public void Imprimir() => Console.WriteLine("Soy una instancia A");
 }
