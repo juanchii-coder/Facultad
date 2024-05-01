@@ -17,21 +17,21 @@ public class RepositorioProductoTXT : IRepositorioProducto
   }
 
   private int ObtenerUltimoId()
-        {
-            if (!File.Exists(_nombreArch))
-                return 0; // Si el archivo no existe, comenzamos desde 0
+  {
+    if (!File.Exists(_nombreArch))
+      return 0; // Si el archivo no existe, comenzamos desde 0
             
-            int ultimoId = 0;
-            using var sr = new StreamReader(_nombreArch);
-            while (!sr.EndOfStream)
-            {
-                ultimoId = int.Parse(sr.ReadLine() ?? "0");
-                // Saltar nombre y precio
-                sr.ReadLine(); 
-                sr.ReadLine();
-            }
-            return ultimoId;
-        }
+    int ultimoId = 0;
+    using var sr = new StreamReader(_nombreArch);
+    while (!sr.EndOfStream)
+    {
+      ultimoId = int.Parse(sr.ReadLine() ?? "0");
+      // Saltar nombre y precio
+      sr.ReadLine(); 
+      sr.ReadLine();
+    }
+    return ultimoId;
+  }
 
   public List<Producto> ListarProductos()
   {
@@ -91,19 +91,19 @@ public class RepositorioProductoTXT : IRepositorioProducto
 
   public void EliminarProducto(int id)
   {
-      var productos = ListarProductos();
-      var productoEliminar = productos.Find(p => p.Id == id);
-      if (productoEliminar != null)
-      {
-        productos.Remove(productoEliminar);
+    var productos = ListarProductos();
+    var productoEliminar = productos.Find(p => p.Id == id);
+    if (productoEliminar != null)
+    {
+      productos.Remove(productoEliminar);
 
-        using var sw = new StreamWriter(_nombreArch, false);
-        foreach (var p in productos)
-        {
-          sw.WriteLine(p.Id);
-          sw.WriteLine(p.Nombre);
-          sw.WriteLine(p.Precio);
-        }
+      using var sw = new StreamWriter(_nombreArch, false);
+      foreach (var p in productos)
+      {
+        sw.WriteLine(p.Id);
+        sw.WriteLine(p.Nombre);
+        sw.WriteLine(p.Precio);
       }
+    }
   }
 }
