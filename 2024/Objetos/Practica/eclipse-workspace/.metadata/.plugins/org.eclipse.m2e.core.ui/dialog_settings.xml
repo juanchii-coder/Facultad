@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/juan/eclipse-workspace"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="defaultLocal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ejercicio11"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio10"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio9"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio8"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio7"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio6"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio5"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio2"/>
+		</list>
+		<list key="groupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="artifactId">
+			<item value="ejercicio11"/>
+			<item value="ejercicio10"/>
+			<item value="ejercicio9"/>
+			<item value="ejercicio8"/>
+			<item value="ejercicio7"/>
+			<item value="ejercicio6"/>
+			<item value="ejercicio5"/>
+			<item value="ejercicio2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="io.github.unlp-oo"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="archetype"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.0.0"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+</section>

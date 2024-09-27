@@ -1,0 +1,35 @@
+package ar.edu.unlp.info.oo1.ejercicio5;
+
+public class Cuerpo3D {
+	private Figura caraBasal;
+	private int altura;
+	
+	public Object getCaraBasal() {
+		return caraBasal;
+	}
+	
+	public void setCaraBasal(Circulo caraBasal) {
+		this.caraBasal = caraBasal;
+	}
+	
+	public void setCaraBasal(Cuadrado caraBasal) {
+		this.caraBasal = caraBasal;
+	}
+	
+	public int getAltura() {
+		return altura;
+	}
+	
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+
+	public double getSuperficieExterior() {
+		return 0;
+	}
+
+	public double getVolumen() {
+		return 0;
+	}
+	
+}

@@ -1,0 +1,22 @@
+package ar.edu.unlp.info.oo1.ejercicio5;
+
+public class Cuadrado {
+ private int lado;
+ 
+ public Cuadrado() {
+	 lado=0;
+ }
+
+public int getLado() {
+	return lado;
+}
+
+public void setLado(int lado) {
+	this.lado = lado;
+}
+
+public Integer getArea() {
+	return this.lado*this.lado;
+}
+ 
+}
