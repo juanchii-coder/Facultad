@@ -4,7 +4,7 @@ public class Celda {
 	private EstadoCelda estado;
 	private int posFila;
 	private int posColumna;
-	private Boolean solucion;
+	private boolean solucion;
 	
 	public Celda(int columna, int fila, boolean valor) {
 		this.posColumna=columna;
@@ -16,7 +16,6 @@ public class Celda {
 		this.posColumna=columna;
 		this.posFila=fila;
 		this.estado=EstadoCelda.DESCONOCIDO;
-		this.solucion=null;
 	}
 	
 	public EstadoCelda getEstado() {

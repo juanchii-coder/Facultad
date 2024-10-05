@@ -2,15 +2,7 @@ package picross;
 
 import java.util.List;
 
-/*lo que esta por arriba y al costado del tablero(0=relleno, x=vacio)
- *    |  |  |1 |  |2 |
- *    |5 |3 |2 |5 |2 |
- * 1_3[0][x][0][0][0]
- * 2_2[0][0][x][0][0]
- * 2_1[0][0][x][0][x]
- *  _5[0][0][0][0][0]
- * 1_3[0][x][0][0][0]
- */
+
 
 public class Pista {
     private boolean esFila;
@@ -54,3 +46,12 @@ public class Pista {
 
 }
 
+/*lo que esta por arriba y al costado del tablero(0=relleno, x=vacio)
+ *    |  |  |1 |  |2 |
+ *    |5 |3 |2 |5 |2 |
+ * 1_3[0][x][0][0][0]
+ * 2_2[0][0][x][0][0]
+ * 2_1[0][0][x][0][x]
+ *  _5[0][0][0][0][0]
+ * 1_3[0][x][0][0][0]
+ */
