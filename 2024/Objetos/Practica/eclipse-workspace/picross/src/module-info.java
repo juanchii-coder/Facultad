@@ -1,4 +1,7 @@
+
 module picross {
 	requires java.desktop;
-    exports picross;
+	exports picross.Controlador;
+    exports picross.Modelo;
+    exports picross.Vista;
 }
