@@ -1,6 +1,8 @@
-package picross;
+package picross.Modelo;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Tablero {
     private Celda[][] tablero;
@@ -46,11 +48,11 @@ public class Tablero {
         this.solucion = solucion;
     }
 
-    
+
 
     private void randomizarSolucion() {
         Random random = new Random();
-        
+
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
                 boolean valor = random.nextBoolean();
@@ -58,7 +60,7 @@ public class Tablero {
             }
         }
     }
-    
+
     private void generarPistaFila() {
     	for (int filaIndex = 0; filaIndex < solucion.length; filaIndex++) {
             List<Integer> bloques = new ArrayList<>();
@@ -66,7 +68,7 @@ public class Tablero {
 
             // Recorre cada celda de la fila actual
             for (int j = 0; j < solucion[filaIndex].length; j++) {
-                if (solucion[filaIndex][j].getSolucion() == true) {
+                if (solucion[filaIndex][j].getSolucion()) {
                     contador++;
                 } else {
                     if (contador > 0) {
@@ -92,15 +94,15 @@ public class Tablero {
             pFilas[filaIndex] = pistaFila;
         }
     }
-    
+
     private void generarPistaColumna() {
     	for (int columnaIndex = 0; columnaIndex < solucion[0].length; columnaIndex++) {
             List<Integer> bloques = new ArrayList<>();
             int contador = 0;  // Contador para las celdas llenas consecutivas
 
             // Recorre cada celda de la columna actual
-            for (int i = 0; i < solucion.length; i++) {
-                if (solucion[i][columnaIndex].getSolucion() == true) {
+            for (Celda[] element : solucion) {
+                if (element[columnaIndex].getSolucion()) {
                     contador++;
                 } else {
                     if (contador > 0) {
@@ -127,15 +129,33 @@ public class Tablero {
         }
     }
 
-    @Override
+
+
+    public Pista[] getpColumnas() {
+		return pColumnas;
+	}
+
+	public void setpColumnas(Pista[] pColumnas) {
+		this.pColumnas = pColumnas;
+	}
+
+	public Pista[] getpFilas() {
+		return pFilas;
+	}
+
+	public void setpFilas(Pista[] pFilas) {
+		this.pFilas = pFilas;
+	}
+
+	@Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
         // Imprimir solución (tablero)
         sb.append("Tablero de solución:\n");
-        for (int i = 0; i < solucion.length; i++) {
-            for (int j = 0; j < solucion[i].length; j++) {
-                sb.append(solucion[i][j].getSolucion() ? "[■]" : "[X]");
+        for (Celda[] element : solucion) {
+            for (int j = 0; j < element.length; j++) {
+                sb.append(element[j].getSolucion() ? "[■]" : "[X]");
             }
             sb.append("\n");
         }
@@ -154,6 +174,10 @@ public class Tablero {
 
         return sb.toString();
     }
+
+	public int getTamanio() {
+		return this.tablero.length;
+	}
 
 }
 

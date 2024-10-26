@@ -1,11 +1,11 @@
-package picross;
+package picross.Modelo;
 
 public class Celda {
 	private EstadoCelda estado;
 	private int posFila;
 	private int posColumna;
 	private boolean solucion;
-	
+
 	public Celda(int columna, int fila, boolean valor) {
 		this.posColumna=columna;
 		this.posFila=fila;
@@ -17,7 +17,7 @@ public class Celda {
 		this.posFila=fila;
 		this.estado=EstadoCelda.DESCONOCIDO;
 	}
-	
+
 	public EstadoCelda getEstado() {
 		return estado;
 	}
@@ -29,7 +29,7 @@ public class Celda {
 	public int getPosFila() {
 		return posFila;
 	}
-	
+
 	public void setPosFila(int posicionFila) {
 		this.posFila = posicionFila;
 	}
@@ -45,13 +45,16 @@ public class Celda {
 	public void setSolucion(boolean solucion) {
 		this.solucion = solucion;
 	}
-	
+
 	public void marcarRelleno() {
 		this.estado=EstadoCelda.RELLENO;
 	}
-	
+
 	public void marcarMarcado() {
 		this.estado=EstadoCelda.MARCADO;
 	}
-	
+	public void marcarDesconocido() {
+		this.estado=EstadoCelda.DESCONOCIDO;
+	}
+
 }

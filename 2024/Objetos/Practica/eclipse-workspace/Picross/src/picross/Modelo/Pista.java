@@ -1,4 +1,4 @@
-package picross;
+package picross.Modelo;
 
 import java.util.List;
 
@@ -37,11 +37,19 @@ public class Pista {
 	public void setValor(List<Integer> valor) {
 		this.valor = valor;
 	}
-	
+
 	@Override
 	public String toString() {
-	    String tipo = esFila ? "Fila" : "Columna";
-	    return tipo + " " + (posicion+1) + ": " + valor.toString();
+	    if (esFila) {
+	    	return (posicion+1) + ": " + valor.toString();
+	    }else {
+	    	/*String pista=(posicion+1) + ":";
+	    	for(int i=0; i<valor.size();i++) {
+	    		pista=" " + valor.get(i);
+	    	}*/
+	    	return (posicion+1) + ": " + valor.toString();
+	    }
+
 	}
 
 }
