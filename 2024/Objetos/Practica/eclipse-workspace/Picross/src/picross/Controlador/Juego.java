@@ -8,15 +8,13 @@ import java.time.Instant;
 public class Juego {
     private Tablero tablero;
     private Jugador jugador;
-    private boolean juegoTerminado;
     private Instant inicioJuego;
     private Instant finJuego;
 	private Duration tiempo;
 
     public Juego(String nombre, int num) {
         this.jugador = new Jugador(nombre, num);
-        this.tablero = new Tablero(num);  // Genera el tablero aleatorio
-        this.juegoTerminado = false;
+        this.tablero = new Tablero(num);
         this.inicioJuego = Instant.now();
     }
 
@@ -81,7 +79,6 @@ public class Juego {
                 this.calcularTiempo();
             }
         }
-        this.juegoTerminado = juegoTerminado;
     }
 
     public Instant getInicioJuego() {

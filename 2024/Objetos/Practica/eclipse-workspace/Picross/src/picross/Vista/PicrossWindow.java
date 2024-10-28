@@ -18,6 +18,7 @@ import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 import javax.swing.border.EmptyBorder;
 
+@SuppressWarnings("unused")
 public class PicrossWindow extends JFrame {
 
 	private static final long serialVersionUID = 1L;
