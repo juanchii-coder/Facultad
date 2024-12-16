@@ -102,7 +102,7 @@ public class Juego {
         return tablero.getTablero();
     }
 
-    public void calcularTiempo() {
+    private void calcularTiempo() {
         if (finJuego != null && inicioJuego != null) {
             this.tiempo = Duration.between(inicioJuego, finJuego);
         }
