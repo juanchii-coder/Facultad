@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="estilo" rel="stylesheet" href="estilo.css">
+    <title>Tarea 1</title>
+</head>
+<body>
+    <div>
+        <h1> Formulario de Datos Personales</h1>
+
+        <form class="contenedor" id="formulario">
+            <p id="mensajeError"></p>
+            <div class="campo">
+                <label>Nombre: </label>
+                <input id="nombre" placeholder="Juan Bautista" required>
+            </div>
+            <div class="campo">
+                <label>Apellido: </label>
+                <input id="apellido" placeholder="Rueda" required>
+            </div>
+            <div class="campo">
+                <label>Email: </label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div class="campo">
+                <label>Fecha de Nacimiento: </label>
+                <input type="date" id="fecha" required>
+            </div>
+            <div class="campo">
+                <label>País de Recidencia: </label>
+                <input id="pais"required>
+            </div>
+            <br>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+        <button id="estilo1"> estilo 1 </button>
+        <br>
+        <button id="estiloContraste"> estilo <br>alto contraste </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

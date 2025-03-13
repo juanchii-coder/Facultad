@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(204, 228, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color:rgb(29, 29, 29);
+}
+
+.contenedor{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: auto;
+    width: 300px; /* Ajusta el ancho del contenedor */
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.campo label{
+    align-self: start;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.campo input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#enviar{
+    background-color: rgb(0, 113, 151);
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+button {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
